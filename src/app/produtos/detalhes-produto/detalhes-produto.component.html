@@ -6,7 +6,7 @@
         <h2 class="product__name"> {{ produto?.descricao}}</h2>
         <h3 class="product__price"> {{ produto?.preco | currency:"BRL" }}</h3>
         <p>Estoque disponível</p>
-        <label for="">
+        <label>
             Quantidade:
             <input type="number" [(ngModel)]="quantidade" min="1">
             unidades (s)

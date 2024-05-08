@@ -18,7 +18,8 @@ export class ProdutosComponent implements OnInit {
   }
 
   ngOnInit(): void {
-     this.produtos = this.produtosService.getAll();
+    console.log("ProdutosComponent carregado");
+    this.produtos = this.produtosService.getAll();
   }
 
 }
