@@ -22,4 +22,5 @@ export class ProdutosComponent implements OnInit {
     this.produtos = this.produtosService.getAll();
   }
 
+
 }
