@@ -6,9 +6,15 @@
 
 .footer__container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;  /* Alterado para centralizar */
     flex-flow: row wrap;
     padding: 20px;
+    text-align: center; /* Adicionado para centralizar o texto */
+}
+
+.footer__item {
+    flex: 1;  /* Adicionado para que cada item ocupe espaço igual */
+    max-width: 400px; /* Adicionado para limitar a largura máxima de cada item */
 }
 
 .footer__copyright {
@@ -28,10 +34,9 @@
 }
 
 .footer__about-text {
-    width: 400px;
+    max-width: 400px; /* Modificado para garantir que o texto não ultrapasse a largura máxima */
     text-align: justify;
 }
-
 
 .footer i {
     color: var(--orange);
