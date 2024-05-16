@@ -8,22 +8,30 @@ import { FooterComponent } from './footer/footer.component';
 import { NaoEncontradoComponent } from './nao-encontrado/nao-encontrado.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
+import { BarraPesquisaComponent } from './barra-pesquisa/barra-pesquisa.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NaoEncontradoComponent
+    NaoEncontradoComponent,
+    BarraPesquisaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    NgxMaskDirective,
+    NgxMaskPipe,
+    FormsModule
   ],
   providers: [
     provideClientHydration(),
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    provideNgxMask()
   ],
   bootstrap: [AppComponent]
 })
